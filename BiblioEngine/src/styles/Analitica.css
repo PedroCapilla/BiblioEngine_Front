@@ -1,0 +1,74 @@
+/* Estilos generales para el dashboard */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Fuente genérica y formal */
+}
+
+/* Estilos para la barra lateral (sidebar) */
+.sidebar {
+    width: 250px; /* Ancho fijo para el sidebar */
+    background-color: #f0f0f0; /* Color de fondo claro */
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilos para los ítems del sidebar */
+.sidebar-item {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #333; /* Color de texto oscuro para contraste */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al cambiar el estilo */
+}
+
+.sidebar-item:hover {
+    background-color: #ddd; /* Cambio de color al pasar el ratón */
+    color: #000;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+}
+
+/* Estilos para el encabezado */
+.header {
+    font-size: 1.5rem; /* Tamaño de fuente grande para el encabezado */
+    margin-bottom: 20px;
+    color: #333; /* Color oscuro para el texto del encabezado */
+}
+
+/* Estilos para la sección de estadísticas */
+.statistics {
+    background-color: #f9f9f9; /* Fondo ligeramente diferente para la sección de estadísticas */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05); /* Sombra ligera para la sección */
+}
+
+/* Estilos para la tabla de estadísticas */
+.stats-table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Colapsar bordes para que la tabla se vea como una sola pieza */
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd; /* Bordes suaves para las celdas de la tabla */
+    padding: 10px;
+    text-align: left;
+}
+
+.stats-table th {
+    background-color: #e9e9e9; /* Fondo para los encabezados de la tabla */
+    font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Fondo alternativo para las filas */
+}

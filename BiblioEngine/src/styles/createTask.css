@@ -1,0 +1,51 @@
+.error {
+  font-weight: bold;
+  color: rgb(173, 22, 22);
+}
+
+.Content {
+  display: flex;
+  margin: 2.5%;
+}
+
+.imageUploader {
+  display: flex;
+  margin-top: 2.5%;
+  margin-bottom: 3%;
+}
+
+.LeftPart {
+  width: 30%;
+}
+
+.RightPart {
+  width: 100%;
+  display: block;
+}
+
+.TipoTarea{
+  margin-bottom: 5%;
+}
+
+.ContenidoTarea{
+  height: 80%;
+  display: none;
+}
+
+.pictoImg{
+  width: 20% !important;
+  height: auto;
+}
+
+.selectedPictos{
+    width: 20%;
+    height: auto;
+    border-radius: 2%;
+    border-color:#0091cb;  
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.done{
+  margin-top: 3px;
+}

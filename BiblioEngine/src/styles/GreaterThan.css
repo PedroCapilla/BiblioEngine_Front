@@ -1,0 +1,81 @@
+/* Estilos generales para el dashboard */
+.dashboard {
+    display: flex;
+    min-height: 100vh; /* Altura completa de la ventana */
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+    color: #333; /* Color de texto general */
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px; /* Ancho del sidebar */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex-grow: 1; /* Ocupar el espacio restante */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+}
+
+.header {
+    background-color: #f8f8f8; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 1px solid #e0e0e0; /* Borde inferior para separar de contenido */
+    display: flex; /* Distribución horizontal */
+    align-items: center; /* Alinear los elementos verticalmente */
+    gap: 10px; /* Espacio entre cada elemento */
+    font-family: Arial, sans-serif; /* Fuente formal y legible */
+}
+
+.header input[type="text"] {
+    padding: 5px 10px; /* Espaciado interno para el input */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente legible */
+}
+
+.header select {
+    padding: 5px 10px; /* Espaciado interno para el select */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente legible */
+    background-color: #fff; /* Fondo blanco */
+}
+
+.header button {
+    padding: 5px 15px; /* Espaciado interno para el botón */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cursor tipo puntero */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave al cambiar color de fondo */
+}
+
+.header button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+/* Estilos para AgGridReact */
+.ag-theme-alpine {
+    height: 600px; /* Altura fija para la grid */
+    width: 100%; /* Ancho completo */
+    border: 1px solid #ddd; /* Bordes sutiles */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Opcional: Puedes agregar estilos adicionales aquí para personalizar aún más tu diseño. */
+.ag-theme-quartz {
+    width: 100%;
+    height: 100vh; /* O la altura que desees para que ocupe toda la pantalla */
+}
+
+/* Estilo para que el texto de las celdas no se recorte */
+.ag-cell {
+    white-space: normal !important; /* Cambia el comportamiento predeterminado de recorte de texto */
+}

@@ -1,0 +1,17 @@
+.boton{
+    width:30px;
+    height:30px;
+    background-color:#f30d0d;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    line-height:32px;
+    float:left;
+  }
+  .boton:hover{
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+  }
