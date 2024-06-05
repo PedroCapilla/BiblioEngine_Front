@@ -6,6 +6,7 @@ import MoreCitations from './pages/MoreCitations'
 import PaperPerYear from './pages/PapersPerYear'
 import FilterPerAuthor from './pages/FilterPerAuthor'
 import GeneralInformation from './pages/GeneralInformation'
+import Register from './pages/Register'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/paperPerYear" element={<PaperPerYear/>}/>
                 <Route path="/filterPerAuthor" element={<FilterPerAuthor/>}/>
                 <Route path="/generalInformation" element={<GeneralInformation/>}/>
+                <Route path="/register" element={<Register/>}/>
             </Routes>
         </BrowserRouter>
     );

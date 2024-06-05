@@ -20,7 +20,7 @@ const Login = ({newUser, handleCambio, logNewUser}) => {
   }
 
   return (
-    <>
+
       <div className="background">
         <Grid
           container
@@ -33,7 +33,7 @@ const Login = ({newUser, handleCambio, logNewUser}) => {
           <Container sx={{ padding: 4, borderRadius: 4, textAlign: 'center' }} component={Paper} elevation={5} maxWidth='xs'>
             <div className="div">
               <div>
-                <center><img src={logo} className="logoImage" alt="Logotipo aplicacion MATE"></img></center>
+                <center><img src={logo} className="logoImage" alt="Logotipo aplicacion Bibliometric"></img></center>
               </div>
 
               <div>
@@ -62,7 +62,7 @@ const Login = ({newUser, handleCambio, logNewUser}) => {
                         setTimeout(() => setValidationErrorMessage(''), 3000);
                       }
                     } catch (error) {
-                      setValidationErrorMessage({ errorValidation: error.message })
+                      setValidationErrorMessage({ errorValidation: 'Credenciales incorrectas' })
                       setTimeout(() => setValidationErrorMessage(''), 3000);
                     }
                   }}
@@ -127,18 +127,19 @@ const Login = ({newUser, handleCambio, logNewUser}) => {
                         >
                           Iniciar sesion
                         </Button>
+
                       </Grid>
                       {errorValidationMesage && <div className='error'>{errorValidationMesage.errorValidation}</div>}
                     </Form>
                   )}
                 </Formik>
-
+                <Link href='/register'>Registrate aqui!</Link>
               </div>
             </div>
           </Container>
         </Grid>
       </div>
-    </>
+
   )
 }
 

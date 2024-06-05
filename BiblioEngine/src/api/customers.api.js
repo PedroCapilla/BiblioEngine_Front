@@ -10,6 +10,9 @@ export const getCustomer = async(customerId) =>
 export const deleteUser = async (userID) =>
   await axios.delete(`http://localhost:8090/customers/${userID}`);
 
+export const createUser = async (body) =>
+    await axios.post(`http://localhost:8090/customers/register`, body)
+
 
 
   
