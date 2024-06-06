@@ -361,12 +361,31 @@ function GeneralInformation() {
                             INFORMACIÓN GENERAL
                         </header>
                         <div className="statistics">
-                            <p>Tamaño del dataset: {countResult}</p>
-                            <p>Total de citas: {sumResult}</p>
-                            <p>Media de citas: {averageResult}</p>
-                            <p>Índice H: {hIndexResult}</p>
-                            <p>Número de autores: {numAuthorsResult}</p>
-                            <p>Número de artículos: {numPapersResult}</p>
+                            <table className="stats-table">
+                                <thead>
+                                <tr>
+                                    <th colSpan="4">Resultados</th>
+                                </tr>
+                                <tr>
+                                    <th>Tamaño del dataset</th>
+                                    <th>Total de citas</th>
+                                    <th>Media de citas</th>
+                                    <th>Índice H</th>
+                                    <th>Número de autores</th>
+                                    <th>Número de revistas</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>{countResult}</td>
+                                    <td>{sumResult}</td>
+                                    <td>{averageResult}</td>
+                                    <td>{hIndexResult}</td>
+                                    <td>{numAuthorsResult}</td>
+                                    <td>{numPapersResult}</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                     </main>

@@ -198,61 +198,6 @@ function Home() {
                                             }}
                                             className="form-control"
                                         />
-                                        <FormControlLabel
-                                            control={
-                                                <Checkbox
-                                                    checked={mostrarPeriodos}
-                                                    onChange={() => setMostrarPeriodos(!mostrarPeriodos)}
-                                                    name="mostrarPeriodos"
-                                                />
-                                            }
-                                            label="¿Quieres periodos de búsqueda?"
-                                        />
-                                        {mostrarPeriodos && (
-                                            <FieldArray name="periods">
-                                                {({ insert, remove, push }) => (
-                                                    <div>
-                                                        {values.periods.length > 0 &&
-                                                            values.periods.map((period, index) => (
-                                                                <div key={index}>
-                                                                    <Field name={`periods.${index}.yearStart`}>
-                                                                        {({ field }) => (
-                                                                            <TextField
-                                                                                {...field}
-                                                                                label="Año de inicio"
-                                                                                fullWidth
-                                                                                margin="normal"
-                                                                            />
-                                                                        )}
-                                                                    </Field>
-                                                                    <Field name={`periods.${index}.yearEnd`}>
-                                                                        {({ field }) => (
-                                                                            <TextField
-                                                                                {...field}
-                                                                                label="Año de fin"
-                                                                                fullWidth
-                                                                                margin="normal"
-                                                                            />
-                                                                        )}
-                                                                    </Field>
-                                                                    <button
-                                                                        type="button"
-                                                                        onClick={() => remove(index)}
-                                                                    >
-                                                                        Eliminar
-                                                                    </button>
-                                                                </div>
-                                                            ))}
-                                                        <button
-                                                            type="button"
-                                                            onClick={() => push({ yearStart: '', yearEnd: '' })}
-                                                        >
-                                                            Agregar Periodo
-                                                        </button>
-                                                    </div>
-                                                )}
-                                            </FieldArray>
-                                        )}
                                         <button type="submit">Guardar</button>
                                     </Form>
                                 )}

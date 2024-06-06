@@ -32,13 +32,13 @@ const Register = () => {
             <div className="container">
                 <div className="div">
                     <FaArrowLeft className="back-arrow" onClick={() => navigate('/login')} />
-                    <h2>Register</h2>
+                    <h2>Registro</h2>
                     <form onSubmit={formik.handleSubmit}>
                         <div>
-                            <label>Name</label>
+                            <label>Username</label>
                             <input
                                 type="text"
-                                name="name"
+                                name="Usernaname"
                                 onChange={formik.handleChange}
                                 value={formik.values.name}
                                 required

@@ -133,7 +133,7 @@ const Login = ({newUser, handleCambio, logNewUser}) => {
                     </Form>
                   )}
                 </Formik>
-                <Link href='/register'>Registrate aqui!</Link>
+                <Link href='/register'>¿No tienes cuenta aun?</Link>
               </div>
             </div>
           </Container>
